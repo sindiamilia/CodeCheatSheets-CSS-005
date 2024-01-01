@@ -1,1 +1,37 @@
-<center><h1>Test
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CSS</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            .pad10 {
+                padding: 10px;
+            }
+            .zoomIn {
+                animation-name: zoomIn;
+                animation-duration: 1s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes zoomIn {
+                0% {
+                    opacity: 0;
+                    transform: scale3d(.3, .3, .3);
+                }
+                50% {
+                    opacity: 1;
+                    transform: scale3d(1, 1, 1);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="zoomIn">
+            <div class="pad10">
+      	        Basic HTML Structure  
+            </div>
+        </div>
+    </body>
+</html>
